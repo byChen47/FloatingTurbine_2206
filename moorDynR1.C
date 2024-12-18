@@ -176,7 +176,7 @@ void Foam::sixDoFRigidBodyMotionRestraints::moorDynR1::restrain
             << endl;
     }
     *outputFile_ << t << " " << CoM[0] << " " << CoM[1] << " "<<CoM[2] <<" "
-                 << rotationAngle[0] <<" " << rotationAngle[1] <<" " << rotationAngle[2] 
+                 << 180/3.1415926535 * rotationAngle[0] <<" " <<180/3.1415926535 * rotationAngle[1] <<" " <<180/3.1415926535 * rotationAngle[2] 
                  << " "<< endl;
     *outputFile_2 << t << " " << v[0] << " " << v[1] << " "<<v[2] <<" "
                  << omega[0] <<" " << omega[1] <<" " << omega[2] 
